@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "koa-examp",
+  "builds": [
+    { "src": "index.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.js" }
+  ]
+}
