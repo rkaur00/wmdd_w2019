@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "name": "wmdd-post",
+  "env": {
+    "DBHOST": "your_aws_endpoint",
+    "DBPORT": "3306",
+    "DBUSER": "your_username",
+    "DBPASSWORD": "your_password",
+    "DBNAME": "blog"
+  },
+  "builds": [
+    { "src": "index.js", "use": "@now/node" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "/index.js" }
+  ]
+}
