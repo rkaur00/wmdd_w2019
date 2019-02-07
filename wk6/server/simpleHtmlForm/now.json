@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "name": "post-form",
+  "builds": [{ "src": "index.html", "use": "@now/static" }]
+}
